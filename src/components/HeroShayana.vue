@@ -1,7 +1,7 @@
 <template>
   <!-- Hero Section Begin -->
   <section class="hero-section">
-    <div class="hero-items owl-carousel">
+    <carousel class="hero-items">
       <div class="single-hero-items set-bg" data-setbg="img/hero-1.jpg">
         <div class="container">
           <div class="row">
@@ -26,16 +26,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </carousel>
   </section>
   <!-- Hero Section End -->
 </template>
 
 <script>
+import carousel from 'vue-owl-carousel'
+
 export default {
   name: "HeroShayna",
   components: {
     // HelloWorld
+    carousel
   }
 };
 </script>
