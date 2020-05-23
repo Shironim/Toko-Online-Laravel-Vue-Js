@@ -4,8 +4,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 mt-5">
-          <div class="product-slider owl-carousel">
-            <div class="product-item">
+          <carousel :nav='false' :autoplay='true' :dots='false' class="product-slider">
+            <div class="product-item mr-3">
               <div class="pi-pic">
                 <img src="img/mickey1.jpg" alt />
                 <ul>
@@ -30,7 +30,7 @@
                 </div>
               </div>
             </div>
-            <div class="product-item">
+            <div class="product-item mr-3">
               <div class="pi-pic">
                 <img src="img/products/women-2.jpg" alt />
                 <ul>
@@ -52,7 +52,7 @@
                 <div class="product-price">$13.00</div>
               </div>
             </div>
-            <div class="product-item">
+            <div class="product-item mr-3">
               <div class="pi-pic">
                 <img src="img/products/women-3.jpg" alt />
                 <ul>
@@ -74,7 +74,7 @@
                 <div class="product-price">$34.00</div>
               </div>
             </div>
-            <div class="product-item">
+            <div class="product-item mr-3">
               <div class="pi-pic">
                 <img src="img/products/women-4.jpg" alt />
                 <ul>
@@ -101,7 +101,7 @@
                 <div class="product-price">$34.00</div>
               </div>
             </div>
-          </div>
+          </carousel>
         </div>
       </div>
     </div>
@@ -110,10 +110,17 @@
 </template>
 
 <script>
+import carousel from "vue-owl-carousel";
 export default {
   name: "WomanBanner",
   components: {
     // HelloWorld
+    carousel,
   }
 };
 </script>
+<style scoped>
+  .product-item .pi-pic img{
+    height: 470px; 
+  }
+</style>

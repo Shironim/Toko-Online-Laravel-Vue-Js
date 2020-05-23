@@ -2,7 +2,7 @@
   <!-- Partner Logo Section Begin -->
   <div class="partner-logo">
     <div class="container">
-      <div class="logo-carousel owl-carousel">
+      <carousel :nav='false' :autoplay='true' :dots='false' class="logo-carousel">
         <div class="logo-item">
           <div class="tablecell-inner">
             <img src="img/logo-carousel/logo-1.png" alt />
@@ -28,17 +28,19 @@
             <img src="img/logo-carousel/logo-5.png" alt />
           </div>
         </div>
-      </div>
+      </carousel>
     </div>
   </div>
   <!-- Partner Logo Section End -->
 </template>
 
 <script>
+import carousel from "vue-owl-carousel";
 export default {
   name: "PartnerShayna",
   components: {
     // HelloWorld
+    carousel,
   }
 };
 </script>
