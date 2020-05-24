@@ -23,6 +23,16 @@ Vue.use(VueRouter)
     name: 'Product',
     component: () => import(/* webpackChunkName: "Product" */ '../views/Product.vue')
   },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: () => import(/* webpackChunkName: "Product" */ '../views/Cart.vue')
+  },
+  {
+    path: '/success',
+    name: 'Success',
+    component: () => import(/* webpackChunkName: "Product" */ '../views/Success.vue')
+  },
 ]
 
 const router = new VueRouter({
