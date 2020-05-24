@@ -1,21 +1,8 @@
 <template>
   <div class="product">
     <Header />
-        <!-- Breadcrumb Section Begin -->
-    <div class="breacrumb-section text-left">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-text product-more">
-                        <a href="./home.html"><i class="fa fa-home"></i> Home</a>
-                        <span>Detail</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb Section Begin -->
-
+    <Breadcrumb />
+    
     <!-- Product Shop Section Begin -->
     <section class="product-shop spad page-details">
         <div class="container">
@@ -77,120 +64,21 @@
         </div>
     </section>
     <!-- Product Shop Section End -->
-        <!-- Related Products Section End -->
-    <div class="related-products spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Related Products</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/women-1.jpg" alt="" />
-                            <ul>
-                                <li class="w-icon active">
-                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                </li>
-                                <li class="quick-view"><a href="#">+ Quick View</a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">Coat</div>
-                            <a href="#">
-                                <h5>Pure Pineapple</h5>
-                            </a>
-                            <div class="product-price">
-                                $14.00
-                                <span>$35.00</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/women-2.jpg" alt="" />
-                            <ul>
-                                <li class="w-icon active">
-                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                </li>
-                                <li class="quick-view"><a href="#">+ Quick View</a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">Shoes</div>
-                            <a href="#">
-                                <h5>Guangzhou sweater</h5>
-                            </a>
-                            <div class="product-price">
-                                $13.00
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/women-3.jpg" alt="" />
-                            <ul>
-                                <li class="w-icon active">
-                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                </li>
-                                <li class="quick-view"><a href="#">+ Quick View</a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">Towel</div>
-                            <a href="#">
-                                <h5>Pure Pineapple</h5>
-                            </a>
-                            <div class="product-price">
-                                $34.00
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="product-item">
-                        <div class="pi-pic">
-                            <img src="img/products/women-4.jpg" alt="" />
-                            <ul>
-                                <li class="w-icon active">
-                                    <a href="#"><i class="icon_bag_alt"></i></a>
-                                </li>
-                                <li class="quick-view"><a href="#">+ Quick View</a></li>
-                            </ul>
-                        </div>
-                        <div class="pi-text">
-                            <div class="catagory-name">Towel</div>
-                            <a href="#">
-                                <h5>Converse Shoes</h5>
-                            </a>
-                            <div class="product-price">
-                                $34.00
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Related Products Section End -->
+    
+    <RelatedProduct />
     <Footer />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Header from "@/components/Header.vue";
-import carousel from "vue-owl-carousel";
-import Footer from "@/components/Footer.vue";
 // import HelloWorld from '@/components/HelloWorld.vue'
+import Header from "@/components/Header.vue";
+import Breadcrumb from "@/components/Breadcrumb.vue";
+import RelatedProduct from "@/components/RelatedProduct.vue";
+import Footer from "@/components/Footer.vue";
+
+import carousel from "vue-owl-carousel";
 
 export default {
   name: "Product",
@@ -198,7 +86,9 @@ export default {
     // HelloWorld
     Header,
     Footer,
-    carousel
+    carousel,
+    RelatedProduct,
+    Breadcrumb
   },
   data(){
     return{
