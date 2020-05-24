@@ -15,7 +15,7 @@
                     </a>
                   </li>
                   <li class="quick-view">
-                    <a href="product.html">+ Quick View</a>
+                    <router-link to="/product">+ Quick View</router-link>
                   </li>
                 </ul>
               </div>
@@ -40,7 +40,7 @@
                     </a>
                   </li>
                   <li class="quick-view">
-                    <a href="#">+ Quick View</a>
+                    <router-link to="/product">+ Quick View</router-link>
                   </li>
                 </ul>
               </div>
@@ -62,7 +62,7 @@
                     </a>
                   </li>
                   <li class="quick-view">
-                    <a href="#">+ Quick View</a>
+                    <router-link to="/product">+ Quick View</router-link>
                   </li>
                 </ul>
               </div>
@@ -84,7 +84,7 @@
                     </a>
                   </li>
                   <li class="quick-view">
-                    <a href="#">+ Quick View</a>
+                    <router-link to="/product">+ Quick View</router-link>
                   </li>
                   <li class="w-icon">
                     <a href="#">
